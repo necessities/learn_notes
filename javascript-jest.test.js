@@ -100,9 +100,7 @@ const priceFilter = (array, num1, num2) => {
     })
 }
 
-
-
-
+// .uncludes() - filter a array for a string
 
 
 
