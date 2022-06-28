@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <title>React Challenge</title>
+
+</head>
+<body>
+
+  <div id="react-container"></div>
+
+  <script type="text/babel">
+    class App extends React.Component{
+      render(){
+        return(
+            <>
+          <h1> DELTA 2022</h1>
+          <li>name1</li> 
+          <li>name2 </li> 
+          <li>name3 </li> 
+          <li> </li> 
+          </>
+        )
+      }
+    }
+    
+    const domContainer = document.querySelector('#react-container')
+    ReactDOM.render(<App />, domContainer)
+
+
+
+
+
+
+  </script>
+</body>
+</html>
