@@ -31,10 +31,9 @@ class AdminUser extends User {
     }
     
 }
+// could technically comment out the constructor and super and still run this class
 
-// could technically comment out the constructor and super and still run this
-
-
+// create two user objects and one AdminUser object
 var user1 = new User("Alex", "alex@example.com")
 var user2 = new User("Alvin", "alvin@example.com")
 var admin = new AdminUser("leo", "leo@example.com")
@@ -42,5 +41,6 @@ var admin = new AdminUser("leo", "leo@example.com")
 var users = [user1, user2, admin]
 console.log(users)
 
+// call the new deleteuser method that only the admin can call and delete a user
 admin.deleteUser(user2)
 console.log(users)
